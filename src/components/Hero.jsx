@@ -4,7 +4,7 @@ import Profile from "../assets/Profile.jpg";
 export default function Hero() {
   return (
     <section
-      id="home"
+      id="hero"
       className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black flex flex-col md:flex-row items-center justify-center px-6 md:px-16 lg:px-24 gap-12 pt-24"
     >
       {/* ===== Left Image ===== */}
