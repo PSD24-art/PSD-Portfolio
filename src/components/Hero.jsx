@@ -40,8 +40,7 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="text-xl sm:text-2xl md:text-3xl text-gray-300 font-light mb-6"
         >
-          <span className="text-yellow-300">Full Stack Developer</span> & AI
-          Integrator
+          <span className="text-yellow-300">Full Stack Developer</span>
         </motion.h2>
 
         <motion.p

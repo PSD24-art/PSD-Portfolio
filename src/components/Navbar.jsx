@@ -61,24 +61,24 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Mobile Toggle */}
-        <div className="md:hidden text-gray-100 text-2xl cursor-pointer">
-          {menuOpen ? (
-            <FaTimes onClick={() => setMenuOpen(false)} />
-          ) : (
-            <FaBars onClick={() => setMenuOpen(true)} />
-          )}
-        </div>
-
         {/* Mobile Menu */}
+        <FaBars onClick={() => setMenuOpen((prev) => !prev)} />
+
         {menuOpen && (
           <motion.div
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.4 }}
-            className="absolute top-0 right-0 w-2/3 h-screen bg-gray-900/95 backdrop-blur-lg flex flex-col items-center justify-center space-y-8 text-xl md:hidden"
+            className="fixed top-0 right-0 w-2/3 h-screen bg-gray-900/95 backdrop-blur-lg flex flex-col items-center justify-center space-y-8 text-xl md:hidden z-40"
           >
+            <button
+              onClick={() => setMenuOpen((prev) => !prev)}
+              className="absolute top-6 right-6 text-3xl text-gray-300 hover:text-blue-400"
+            >
+              <FaTimes />
+            </button>
+
             {navItems.map((item, i) => (
               <a
                 key={i}
