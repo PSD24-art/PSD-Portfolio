@@ -68,7 +68,7 @@ export default function Hero() {
             Hire Me
           </a>
           <a
-            href="/Prathamesh_Dahake_CV.pdf"
+            href="/Resume_Prathamesh.pdf"
             download
             className="px-6 py-3 rounded-lg border border-yellow-400 text-yellow-300 hover:bg-yellow-400 hover:text-black font-semibold transition"
           >
