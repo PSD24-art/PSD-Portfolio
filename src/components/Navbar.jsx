@@ -62,7 +62,10 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Menu */}
-        <FaBars onClick={() => setMenuOpen((prev) => !prev)} />
+        <FaBars
+          className="md:hidden"
+          onClick={() => setMenuOpen((prev) => !prev)}
+        />
 
         {menuOpen && (
           <motion.div

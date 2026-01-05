@@ -1,3 +1,4 @@
+// src/components/Hero.jsx
 import { motion } from "framer-motion";
 import Profile from "../assets/Profile.png";
 
@@ -22,6 +23,7 @@ export default function Hero() {
           />
         </div>
       </motion.div>
+
       {/* ===== Right Content ===== */}
       <motion.div
         initial={{ opacity: 0, x: -60 }}
@@ -40,7 +42,9 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="text-xl sm:text-2xl md:text-3xl text-gray-300 font-light mb-6"
         >
-          <span className="text-yellow-300">Full Stack Developer</span>
+          <span className="text-yellow-300">
+            Full-Stack Web Developer (MERN)
+          </span>
         </motion.h2>
 
         <motion.p
@@ -49,9 +53,9 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.7 }}
           className="text-gray-400 max-w-xl leading-relaxed mb-8"
         >
-          I build scalable, intelligent web apps that empower businesses. I’m
-          passionate about creating digital products that deliver results — from
-          idea to deployment.
+          I build production-ready web applications focused on real business
+          workflows. My work includes backend systems, secure authentication,
+          dashboards, payment integrations, scalable APIs and more..
         </motion.p>
 
         {/* ===== Buttons ===== */}
@@ -62,17 +66,18 @@ export default function Hero() {
           className="flex justify-center md:justify-start gap-4"
         >
           <a
-            href="#contact"
-            className="px-6 py-3 rounded-lg bg-fuchsia-500 hover:bg-fuchsia-700 text-amber-100 font-semibold transition"
+            href="#projects"
+            className="px-6 py-3 rounded-lg bg-fuchsia-500 hover:bg-fuchsia-700 font-semibold transition "
           >
-            Hire Me
+            View Projects
           </a>
+
           <a
             href="/Resume_Prathamesh.pdf"
             download
             className="px-6 py-3 rounded-lg border border-yellow-400 text-yellow-300 hover:bg-yellow-400 hover:text-black font-semibold transition"
           >
-            Download CV
+            Download Resume
           </a>
         </motion.div>
       </motion.div>
