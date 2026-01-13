@@ -37,7 +37,7 @@ const Navbar = () => {
         {/* Logo */}
         <motion.a
           href="#hero"
-          className="text-2xl font-semibold text-white"
+          className="text-2xl font-semibold text-white-500"
           whileHover={{ scale: 1.1 }}
         >
           PSD<span className="blinking_cursor">_</span>
@@ -53,7 +53,7 @@ const Navbar = () => {
             >
               <a
                 href={item.href}
-                className="text-gray-200 hover:text-blue-400 transition"
+                className="text-white-500 hover:text-blue-400 transition"
               >
                 {item.name}
               </a>
