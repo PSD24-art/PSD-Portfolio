@@ -17,7 +17,6 @@ const skills = [
   { name: "React.js", icon: <FaReact className="text-sky-400" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
   { name: "Express.js", icon: <SiExpress className="text-gray-300" /> },
-  { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
   { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
   { name: "HTML5", icon: <SiHtml5 className="text-orange-500" /> },
   { name: "CSS3", icon: <SiCss3 className="text-blue-500" /> },
@@ -27,8 +26,8 @@ const skills = [
   { name: "Java", icon: <FaJava className="text-red-500" /> },
   { name: "Git & GitHub", icon: <FaGitAlt className="text-orange-400" /> },
   { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
-  { name: "Docker", icon: <FaDocker className="text-blue-600" /> },
-  { name: "Kubernetes", icon: <SiKubernetes className="text-sky-600" /> },
+  // { name: "Docker", icon: <FaDocker className="text-blue-600" /> },
+  // { name: "Kubernetes", icon: <SiKubernetes className="text-sky-600" /> },
 ];
 
 const Skills = () => {
