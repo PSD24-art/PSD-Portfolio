@@ -92,7 +92,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/Resume_Prathamesh.pdf"
+              href="/Resume-Prathamesh.pdf"
               download
               className="px-6 py-3 rounded-lg
                          border border-yellow-400 text-yellow-300

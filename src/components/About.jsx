@@ -15,18 +15,23 @@ const About = () => {
   const cards = [
     {
       icon: <FaCode className="text-3xl text-blue-400" />,
-      title: "Full Stack Developer",
-      desc: "Experienced in MERN stack with strong fundamentals in JavaScript and backend systems.",
+      title: "Full Stack Web Developer",
+      desc: "Building responsive and functional web applications using the MERN stack with clean and structured code.",
     },
     {
       icon: <FaBrain className="text-3xl text-purple-400" />,
-      title: "AI Integrator",
-      desc: "Integrating AI-driven logic in real-world web apps to make them intelligent and adaptive.",
+      title: "Strong JavaScript Foundations",
+      desc: "Deep understanding of JavaScript concepts such as closures, async flow, state management, and data handling.",
     },
     {
       icon: <FaRocket className="text-3xl text-pink-400" />,
-      title: "Growth Mindset",
-      desc: "I believe in smart work, consistency, and continuous improvement to build impactful solutions.",
+      title: "Backend & API Development",
+      desc: "Designing REST APIs, handling authentication, and managing databases with Node.js, Express, and MongoDB.",
+    },
+    {
+      icon: <FaCode className="text-3xl text-green-400" />,
+      title: "Problem-Solving Mindset",
+      desc: "Approaching problems logically with a focus on clarity, maintainability, and real-world implementation.",
     },
   ];
 
@@ -44,7 +49,7 @@ const About = () => {
         About <span className="text-blue-400">Me</span>
       </motion.h2>
 
-      <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
         {cards.map((card, i) => (
           <motion.div
             key={i}

@@ -1,33 +1,43 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaJava, FaGitAlt, FaDocker } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaGitAlt, FaDocker } from "react-icons/fa";
 import {
   SiJavascript,
-  SiTailwindcss,
-  SiMongodb,
-  SiMysql,
-  SiExpress,
-  SiRedux,
-  SiKubernetes,
+  SiTypescript,
   SiHtml5,
   SiCss3,
+  SiTailwindcss,
+  SiExpress,
+  SiMongodb,
+  SiMysql,
+  SiRedux,
+  SiPython,
 } from "react-icons/si";
 
 const skills = [
-  { name: "React.js", icon: <FaReact className="text-sky-400" /> },
-  { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
-  { name: "Express.js", icon: <SiExpress className="text-gray-300" /> },
-  { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
+  // Frontend
   { name: "HTML5", icon: <SiHtml5 className="text-orange-500" /> },
   { name: "CSS3", icon: <SiCss3 className="text-blue-500" /> },
-  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-500" /> },
-  { name: "SQL", icon: <SiMysql className="text-blue-400" /> },
-  { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
-  { name: "Java", icon: <FaJava className="text-red-500" /> },
-  { name: "Git & GitHub", icon: <FaGitAlt className="text-orange-400" /> },
+  { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
+  { name: "TypeScript", icon: <SiTypescript className="text-blue-400" /> },
+  { name: "React.js", icon: <FaReact className="text-sky-400" /> },
   { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
-  // { name: "Docker", icon: <FaDocker className="text-blue-600" /> },
-  // { name: "Kubernetes", icon: <SiKubernetes className="text-sky-600" /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-500" /> },
+
+  // Backend
+  { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
+  { name: "Express.js", icon: <SiExpress className="text-gray-300" /> },
+
+  // Databases
+  { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
+  { name: "SQL (MySQL)", icon: <SiMysql className="text-blue-400" /> },
+
+  // Languages
+  { name: "Python", icon: <SiPython className="text-yellow-500" /> },
+
+  // Tools
+  { name: "Git & GitHub", icon: <FaGitAlt className="text-orange-400" /> },
+  { name: "Docker", icon: <FaDocker className="text-blue-500" /> },
 ];
 
 const Skills = () => {
